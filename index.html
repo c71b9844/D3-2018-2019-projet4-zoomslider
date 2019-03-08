@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Zoom Slider</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>Les talents de<span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+			<h1>NARA</h1>
+			<nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/nana1.jpg" alt="Nara" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title">La peinture</h2>
+			</div>
+
+
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/nana2.jpg" alt="Nara" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title">Le cache-cache</h2>
+			</div>
+
+
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/nana3.jpg" alt="nara" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title">La honte</h2>
+			</div>
+
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/nana4.jpg" alt="nara" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title">Se rouler</h2>
+			</div>
+
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview">
+							<img src="images/nana5.jpg" alt="Nara" />
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title">La gym</h2>
+			</div>
+
+
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<div class="content__item-inner">
+					<h2>La peinture</h2>
+					<h3>Incroyable qualité resquise chez un chat</h3>
+					<p>Connaissez vous un chat capable d'une telle prouesse ????????????????.</p>
+
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/ipad-content.jpg" alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>Le cache cache</h2>
+					<h3>Talent principal de Nara. C'est pour mieux attaquer ses prois. Mes pieds.</h3>
+					<p>Quoi de plus drôle ?</p>
+
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/macbook-content.jpg" alt="MacBook Content" />
+				<div class="content__item-inner">
+					<h2>La honte</h2>
+					<h3>C'est souvent ce qu'il arrive à Nara quand elle vomis sur le tapis ou qu'elle se coince la patte.</h3>
+					<p>Avez-vous déjà vu un chat ressentir ce type d'émotion ???</p>
+
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/imac-content.jpg" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>Se rouler</h2>
+					<h3>Voici une très impressionnante manière de se rouler. De profiter au maximum de l'hergonomie de l'espace.</h3>
+					<p>Très grande spécialité de Nara ! </p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/apple-watch-content.png" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>La Gym</h2>
+					<h3>Nara qui n'a pas besoin de coach sportif, elle effectue son sport seule !!</h3>
+					<p>Tout cela en effet pour garder la ligne au maximum, afin de continer à plaire à sa maman mais SURTOUT à Matou, le beau chat noir de la voisine. Elle s'entraine sans relache.
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
