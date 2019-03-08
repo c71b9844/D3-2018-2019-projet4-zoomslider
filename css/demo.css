@@ -49,9 +49,7 @@ html {
 
 /* Main styles */
 body {
-	font-family: "Oswald",'Amatic SC' , sans-serif, cursive
-
-
+	font-family: "Oswald",'Amatic SC' , sans-serif, cursive;
 	color: #CECECE;
 	background: #white;
 	-webkit-font-smoothing: antialiased;
